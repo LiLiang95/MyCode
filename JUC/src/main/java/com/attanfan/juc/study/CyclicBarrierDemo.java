@@ -1,4 +1,7 @@
 package com.attanfan.juc.study;
+/**
+ * 一句话：收集七颗龙珠召唤神龙
+ */
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
