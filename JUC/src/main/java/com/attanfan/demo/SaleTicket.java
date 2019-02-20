@@ -22,6 +22,7 @@ class Ticket
             e.printStackTrace();
         }finally {
             lock.unlock();
+
         }
     }
 }
