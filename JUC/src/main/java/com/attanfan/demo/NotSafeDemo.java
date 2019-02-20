@@ -5,7 +5,19 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
+ * HashSet 底层源码实现是 HashMap
+ *      HashSet的add方法是调用map的put方法，put是k v 键值对，
+ *      每一个k不一样但是v都是Object类型的常量
+ *
+ *
+ *
+ *
  * 题目：请举例说明集合类是不安全的
+ * 1.1 故障现象 ：java.util.ConcurrentModificationException  java并发修改异常
+ * 1.2 导致原因 ：高并发时，线程争抢资源导致
+ * 1.3 解决方案 ：ArrayList使用 new CopyOnWriteArrayList(); //写时复制
+ *                HashSet使用 new CopyOnWriteArraySet<>();
+ *                  map使用 new ConcurrentHashMap<>();
  */
 public class NotSafeDemo
 {
@@ -32,6 +44,7 @@ public class NotSafeDemo
             new Thread(() -> {
                 set.add(UUID.randomUUID().toString().substring(0,4));
                 System.out.println(set);
+
             },String.valueOf(i)).start();
         }
     }
