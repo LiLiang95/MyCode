@@ -11,7 +11,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *
  *
  *
- *
  * 题目：请举例说明集合类是不安全的
  * 1.1 故障现象 ：java.util.ConcurrentModificationException  java并发修改异常
  * 1.2 导致原因 ：高并发时，线程争抢资源导致
