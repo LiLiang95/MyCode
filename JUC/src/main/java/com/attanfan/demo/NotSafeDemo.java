@@ -18,6 +18,7 @@ public class NotSafeDemo
                 map.put(Thread.currentThread().getName(),UUID.randomUUID().toString().substring(0,4));
                 System.out.println(map);
             },String.valueOf(i)).start();
+
         }
 
     }
