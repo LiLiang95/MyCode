@@ -86,8 +86,22 @@ class ShareResource
 
 
 /**
- * @auther zzyy
- * @create 2019-02-19 8:44
+ *  问题：wait()，notifyAll()是不是Java.lang.Thread 里面的方法？
+ *      答：不是，是java.lang.Object 里面的方法
+ *
+ *
+ * 新版本lock ：
+ *          private Lock lock = new ReentrantLock();
+            private Condition condition = lock.newCondition();
+
+ *
+ *        condition.await()替换  this.wait();
+ *        condition.signalAll(); 替换 this.notifyAll();
+ *
+ *
+ *
+ *
+ *
  * 题目：现在两个线程，可以操作初始值为零的一个变量，实现一个线程对该变量加1，一个线程对该变量减1，
  * 实现交替，来10轮，变量初始值为零。
  *
