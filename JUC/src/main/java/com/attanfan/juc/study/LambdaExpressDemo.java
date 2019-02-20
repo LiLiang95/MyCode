@@ -25,6 +25,7 @@ interface Foo
  *
  * 1    lambda Express
  *
+ *
  *  拷贝小括号，写死右箭头，落地大括号
  *
  * 1.1 函数式接口才能用Lambda Express
