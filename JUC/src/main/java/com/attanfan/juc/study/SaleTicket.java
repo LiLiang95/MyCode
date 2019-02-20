@@ -1,4 +1,4 @@
-package com.attanfan.demo;
+package com.attanfan.juc.study;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

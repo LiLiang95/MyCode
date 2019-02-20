@@ -1,4 +1,4 @@
-package com.attanfan.demo;
+package com.attanfan.juc.study;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -17,8 +17,6 @@ class MyThread implements Callable<Integer>
 
 
 /**
- * @auther zzyy
- * @create 2019-02-18 17:11
  * java
  * 多线程中，第3种获得多线程的方式
  * 1：继承Thread类 （很少用）
