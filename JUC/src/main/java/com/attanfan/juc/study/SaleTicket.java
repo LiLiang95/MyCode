@@ -50,7 +50,6 @@ public class SaleTicket
         new Thread(() -> { for (int i = 1; i <=40; i++) ticket.sale(); }, "B").start();
         new Thread(() -> { for (int i = 1; i <=40; i++) ticket.sale(); }, "C").start();
 
-
     }
 }
 
