@@ -20,6 +20,7 @@ public class CountDownLatchDemo
 
     }
 
+
     private static void closeDoor() throws InterruptedException {
         CountDownLatch countDownLatch = new CountDownLatch(6);
 
