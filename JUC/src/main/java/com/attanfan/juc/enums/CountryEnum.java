@@ -14,6 +14,7 @@ public enum CountryEnum {
         this.retMessage = retMessage;
     }
 
+
     public static CountryEnum forEach_CountryEnum(int index)
     {
         CountryEnum[] myArray = CountryEnum.values();
