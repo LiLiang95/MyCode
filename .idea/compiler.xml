@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Excel-poi" />
         <module name="JUC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Excel-poi" target="1.8" />
       <module name="JUC" target="1.8" />
     </bytecodeTargetLevel>
   </component>

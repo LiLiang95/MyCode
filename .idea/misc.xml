@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/JUC/pom.xml" />
+        <option value="$PROJECT_DIR$/Excel-poi/pom.xml" />
       </list>
     </option>
   </component>
